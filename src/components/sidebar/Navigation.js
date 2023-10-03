@@ -7,10 +7,10 @@ export const Navigation = () =>{
         <div className='box box-dark navigation'>
             <b className='box-title-dark'>Navigasi<hr/></b>
             <ul type='none'>
-                <li><a>menu</a></li>
-                <li><a>menu</a></li>
-                <li><a>menu</a></li>
-                <li><a>menu</a></li>
+                <li><a href='/'>Dashboard</a></li>
+                <li><a href='/siswa'>Data Siswa</a></li>
+                <li><a href='/buku'>Data Buku</a></li>
+                <li><a href='/admin'>Data Admin</a></li>
             </ul>
         </div>
     )
