@@ -127,7 +127,7 @@ html{
 .last{
     margin-right: 0;
 }
-.small-container{
+.box-container{
     display: flex;
 
 }
@@ -154,22 +154,48 @@ html{
 .activity{
     height: auto;
 }
-.activity-table{
+table{
     font-size: larger;
     width: 100%;
     background-color: #f1f1f1;
     border-radius: 10px;
 }
-.activity-table td, .activity-table th{
+td,th{
     padding: 10px;
 }
-.activity-table th{
+table th{
     border-bottom: solid 2px rgba(0, 128, 0, 0.301);
 }
-.activity-table tr :hover{
+tr :hover{
     border-radius: 10px;
     background-color: #dadada;
 }
 .activity-table .time{
     width: 25%;
+}
+/*halaman buku*/
+.book{
+    width: 40%;
+    margin-right: 20px;
+    height: auto;
+}
+.gambar-buku{
+    background-color: #ececec;
+    width: 40%;
+    margin: 10px;
+    height: 200px;
+}
+.info-buku{
+    font-size: small;
+    margin: 10px;
+}
+.deskripsi-buku{
+    margin: 10px;
+    overflow: hidden;
+}
+.underlined{
+    border-bottom: solid 2px rgba(0, 165, 0, 0.233);
+}
+.info-buku b, .deskripsi-buku b{
+    border-bottom: solid 2px rgba(0, 165, 0, 0.233);
 }

@@ -5,7 +5,7 @@ export function ActivityLog(){
         <div className="box activity">
             <div className="box-title">Riwayat Aktivitas</div>
             <hr/>
-            <table className="activity-table">
+            <table>
                 <tr>
                     <th className="time">waktu</th>
                     <th>aktivitas</th>
