@@ -1,7 +1,7 @@
 import React from "react";
 export function BookInfo(){
     return(
-        <div className="box book">
+        <div className="box">
             <b className="box-title">Informasi Buku</b>
             <hr/>
             <div className="box-container">

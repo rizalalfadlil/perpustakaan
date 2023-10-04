@@ -174,16 +174,36 @@ tr :hover{
     width: 25%;
 }
 /*halaman buku*/
-.book{
+.half{
     width: 40%;
     margin-right: 20px;
-    height: auto;
+    height: max-content;
 }
 .gambar-buku{
     background-color: #ececec;
     width: 40%;
     margin: 10px;
     height: 200px;
+}
+.grid-buku{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gambar-buku-list{
+    background-color: #ececec;
+    width: 150px;
+    margin: 10px;
+    height: 200px;
+    padding-top: 140px;
+    border-radius: 10px;
+}
+.gambar-buku-list a{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #0000001c;
 }
 .info-buku{
     font-size: small;
@@ -196,6 +216,38 @@ tr :hover{
 .underlined{
     border-bottom: solid 2px rgba(0, 165, 0, 0.233);
 }
-.info-buku b, .deskripsi-buku b{
+.info-buku b, .info-siswa b, .deskripsi-buku b{
     border-bottom: solid 2px rgba(0, 165, 0, 0.233);
+}
+.menu-box{
+    height: auto;
+}
+.menu-box a{
+    font-weight: bold;
+    display: block;
+    border: none;
+    padding: 10px;
+    width: auto;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.green1{
+    background-color: rgb(0, 119, 0);
+}
+.green2{
+    background-color: rgb(43, 197, 43);
+}
+.green3{
+    background-color: rgb(134, 230, 134);
+}
+/* Siswa */
+.foto-siswa{
+    background-color: #ececec;
+    width: 120px;
+    margin: 20px;
+    height: 120px;
+    border-radius: 100%;
 }

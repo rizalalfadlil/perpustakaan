@@ -3,16 +3,15 @@ import SmallBox from "./components/mainpage/smallbox";
 import { ActivityLog } from "./components/mainpage/activity";
 import { BookInfo } from "./components/data buku/infoBuku";
 import { BookList } from "./components/data buku/listBuku";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Menu } from "./components/data buku/menu";
+import { RoutePage } from "./components/routes";
+import { ListSiswa } from "./components/data siswa/listSiswa";
+import { InfoSiswa } from "./components/data siswa/infoSiswa";
+
 export const Mainpage = () => {
     return (
         <div className="main">
-            <BrowserRouter>
-                <Routes>
-                    <Route exact path="/" Component={Dashboard}/>
-                    <Route path="/buku" Component={DataBuku}/>
-                </Routes>
-            </BrowserRouter>
+            <RoutePage/>
         </div>
     )
 }
@@ -34,9 +33,28 @@ const Dashboard = () =>{
 }
 const DataBuku = () =>{
     return(
+       <>
        <div className="box-container">
-        <BookInfo/>
+        <div className="half">
+            <BookInfo/>
+            <Menu/>
+        </div>
         <BookList/>
        </div>
+       </>
     )
-   }
+}
+const DataSiswa = () =>{
+    return(
+       <>
+       <div className="box-container">
+        <div className="half">
+            <InfoSiswa/>
+            <Menu/>
+        </div>
+        <ListSiswa/>
+       </div>
+       </>
+    )
+}
+export {DataBuku, Dashboard, DataSiswa};
