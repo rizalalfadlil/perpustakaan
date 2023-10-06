@@ -1,8 +1,10 @@
 import React from "react";
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export function BookInfo(){
     return(
         <div className="box">
-            <b className="box-title">Informasi Buku</b>
+            <b className="box-title"><i className="fa fa-book m-2"/>Informasi Buku</b>
             <hr/>
             <div className="box-container">
                 <div className="gambar-buku"></div>

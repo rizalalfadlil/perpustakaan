@@ -1,8 +1,9 @@
 import React from "react";
+import 'font-awesome/css/font-awesome.min.css';
 export function ListSiswa(){
     return(
         <div className="box">
-            <div className="box-title">Daftar Siswa</div>
+            <div className="box-title"><i className="fa fa-users m-2"/>Daftar Siswa</div>
             <hr/>
             <table>
                 <tr>

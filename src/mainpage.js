@@ -7,7 +7,8 @@ import { Menu } from "./components/data buku/menu";
 import { RoutePage } from "./components/routes";
 import { ListSiswa } from "./components/data siswa/listSiswa";
 import { InfoSiswa } from "./components/data siswa/infoSiswa";
-
+import { InfoAdmin } from "./components/data admin/infoAdmin";
+import { ListAdmin } from "./components/data admin/listAdmin";
 export const Mainpage = () => {
     return (
         <div className="main">
@@ -57,4 +58,17 @@ const DataSiswa = () =>{
        </>
     )
 }
-export {DataBuku, Dashboard, DataSiswa};
+const DataAdmin = () =>{
+    return(
+       <>
+       <div className="box-container">
+        <div className="half">
+            <InfoAdmin/>
+            <Menu/>
+        </div>
+        <ListAdmin/>
+       </div>
+       </>
+    )
+}
+export {DataBuku, Dashboard, DataSiswa, DataAdmin};

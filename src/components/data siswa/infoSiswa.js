@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react";import 'font-awesome/css/font-awesome.min.css';
 export function InfoSiswa(){
     return(
         <div className="box">
-            <b className="box-title">Informasi Siswa</b>
+            <b className="box-title"><i className="fa fa-user m-2"/>Informasi Siswa</b>
             <hr/>
             <div className="box-container">
                 <div className="foto-siswa"></div>
