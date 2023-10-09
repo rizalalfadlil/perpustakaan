@@ -28,7 +28,7 @@ const [isGridview, setIsGridview] = useState(true);
                 <table>
                 <tr>
                     <th width="10%">id buku</th>
-                    <th colSpan={2}>judul buku</th>
+                    <th>judul buku</th>
                     <th width="10%">status</th>
                 </tr>
                 <tr>

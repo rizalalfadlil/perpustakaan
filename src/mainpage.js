@@ -9,6 +9,7 @@ import { ListSiswa } from "./components/data siswa/listSiswa";
 import { InfoSiswa } from "./components/data siswa/infoSiswa";
 import { InfoAdmin } from "./components/data admin/infoAdmin";
 import { ListAdmin } from "./components/data admin/listAdmin";
+import { DaftarPinjam } from "./components/data siswa/daftarPinjam";
 export const Mainpage = () => {
     return (
         <div className="main">
@@ -51,6 +52,7 @@ const DataSiswa = () =>{
        <div className="box-container">
         <div className="half">
             <InfoSiswa/>
+            <DaftarPinjam/>
             <Menu/>
         </div>
         <ListSiswa/>
