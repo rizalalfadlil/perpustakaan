@@ -1,5 +1,5 @@
 import React from "react";
-import { InputText, InputNumber, InputTextArea } from "./inputs/Inputs";
+import { InputText, InputTextArea } from "./inputs/Inputs";
 
 export function EditBook(){
     return(

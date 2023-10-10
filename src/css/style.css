@@ -1,5 +1,29 @@
+:root{
+    --color-one: rgb(0, 128, 0);
+    --color-two: rgb(43, 105, 45);
+    --color-three: rgb(21, 102, 41);
+    --color-underline: rgba(0, 165, 0, 0.233);
+    --color-four: rgb(43, 197, 43);
+    --color-five: rgb(134, 230, 134);
+    --color-six: rgb(217, 223, 217);
+    
+    --theme-one: rgb(255, 255, 255);
+    --theme-two: rgb(217, 217, 217);
+    --theme-three: rgb(241, 241, 241);
+    --theme-four: rgba(255, 255, 255, 0.13);
+    --theme-five: rgb(224, 224, 224);
+    --theme-six: rgb(218, 218, 218);
+    --theme-seven: rgb(226, 226, 226);
+    --theme-eight: rgb(233, 233, 233);
+    --theme-nine: rgba(255, 255, 255, 0.281);
+    --theme-invert: rgb(0, 0, 0);
+
+}
+#root{
+    background-color: var(--theme-two);
+}
 .bg{
-    background-color: #D9D9D9;
+    background-color: var(--theme-two);
     width: 100%;
     height: 100%;
 }
@@ -11,8 +35,8 @@
     width: 20%;
 }
 .custom-navbar {
-    background-color: green;
-    color: white;
+    background-color: var(--color-one);
+    color: var(--theme-one);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   .sb{
@@ -23,11 +47,11 @@
     z-index: 2;
 }
 html{
-    background-color: #d9d9d9;
+    background-color: var(--theme-two);
 }
 .box {
     border-radius: 10px;
-    background-color: #f1f1f1;
+    background-color: var(--theme-three);
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
@@ -39,7 +63,7 @@ html{
 }
 .box-invert {
     border-radius: 10px;
-    background-color: #d9d9d9;
+    background-color: var(--theme-two);
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
@@ -52,27 +76,27 @@ html{
     background-color: #367e39;
 } */
 .box-dark{
-    background-color: #2B6A2D;
-    color: white;
+    background-color: var(--color-two);
+    color: var(--theme-one);
 }
 .box-dark hr{
-    border: solid 1px white;
+    border: solid 1px var(--theme-one);
     border-radius: 2px;
     opacity: 50%;
 }
 .box-title{
     padding-left: 20px;
     font-size: larger;
-    color: #156629;
+    color: var(--color-three);
     font-weight: bold;
 }
 .box-title-dark{
     padding-left: 20px;
     font-size: larger;
-    color: #ffffff;
+    color: var(--theme-one);
 }
 .content{
-    background-color: #d9d9d9;
+    background-color: var(--theme-two);
 }
 /* AccountInfo */
 .accountinfo{
@@ -90,10 +114,10 @@ html{
     width: 120px;
     height: 120px;
     border-radius: 100px;
-    background-color: black;
+    background-color: var(--theme-invert);
 }
 .account-table hr{
-    border: solid 3px rgb(14, 75, 14);
+    border: solid 3px var(--color-three);
     border-radius: 2px;
 }
 /* Navigation */
@@ -102,17 +126,17 @@ html{
 }
 .navigation .flex-wrap a{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: var(--theme-four);
     width: 30%;
     padding: 20px 0px;
     margin: 5px;
-    color: #D9D9D9;
+    color: var(--theme-two);
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
 }
 .navigation .flex-wrap a:hover{
-    background-color: #ffffff15;
+    background-color: var(--theme-nine);
 }
 .navigation .flex-wrap a i{
     scale: 2;
@@ -151,7 +175,7 @@ html{
     border-radius: 2px;
 }
 .close-button:hover{
-    background-color: #e0e0e0;
+    background-color: var(--theme-five);
 }
 .buku-dipinjam{
     width: 50%;
@@ -167,7 +191,7 @@ html{
     flex-wrap: wrap;
 }
 .number-bg{
-    background-color: rgb(217, 223, 217);
+    background-color: var(--color-six);
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -184,7 +208,7 @@ html{
     width: 50%;
 }
 .title hr{
-    border: solid 2px green;
+    border: solid 2px var(--color-one);
 }
 .activity{
     height: auto;
@@ -192,18 +216,18 @@ html{
 table{
     font-size: larger;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--theme-one);
     border-radius: 10px;
 }
 td,th{
     padding: 10px;
 }
 table th{
-    border-bottom: solid 2px rgba(0, 128, 0, 0.301);
+    border-bottom: solid 2px var(--color-underline);
 }
 tr :hover{
     border-radius: 10px;
-    background-color: #dadada;
+    background-color: var(--theme-six);
 }
 .activity-table .time{
     width: 25%;
@@ -215,7 +239,7 @@ tr :hover{
     height: max-content;
 }
 .gambar-buku{
-    background-color: #e2e2e2;
+    background-color: var(--theme-seven);
     width: 40%;
     margin: 10px;
     height: 200px;
@@ -225,7 +249,7 @@ tr :hover{
     flex-wrap: wrap;
 }
 .gambar-buku-list{
-    background-color: #e2e2e2;
+    background-color: var(--theme-seven);
     width: 150px;
     margin: 10px;
     height: 200px;
@@ -233,7 +257,7 @@ tr :hover{
     border-radius: 10px;
 }
 .gambar-buku-list a{
-    color: white;
+    color: var(--theme-one);
     font-weight: bold;
     text-align: center;
     display: block;
@@ -249,10 +273,10 @@ tr :hover{
     overflow: hidden;
 }
 .underlined{
-    border-bottom: solid 2px rgba(0, 165, 0, 0.233);
+    border-bottom: solid 2px var(--color-underline);
 }
 .info-buku b, .info-siswa b, .info-admin b, .deskripsi-buku b{
-    border-bottom: solid 2px rgba(0, 165, 0, 0.233);
+    border-bottom: solid 2px var(--color-underline);
 }
 .menu-box{
     height: auto;
@@ -266,20 +290,20 @@ tr :hover{
     border-radius: 5px;
     margin: 5px;
     text-decoration: none;
-    color: white;
+    color: var(--theme-one);
     text-align: center;
 }
 .menu-box a:hover{
     opacity: 50%;
 }
 .green1{
-    background-color: rgb(0, 119, 0);
+    background-color: var(--color-three);
 }
 .green2{
-    background-color: rgb(43, 197, 43);
+    background-color: var(--color-four);
 }
 .green3{
-    background-color: rgb(134, 230, 134);
+    background-color: var(--color-five);
 }
 /* Siswa */
 .foto-siswa, .foto-admin{
@@ -292,14 +316,16 @@ tr :hover{
 /* edit */
 .input{
  padding: 20px;
+ 
 }
 .input input{
     width: 100%;
     margin-top: 20px;
     font-size: xx-large;
     border: none;
-    border-bottom: solid 2px rgba(0, 165, 0, 0.233);
+    border-bottom: solid 2px var(--color-underline);
     border-radius: 2px;
+    background-color: var(--theme-three);
 }
 .input textarea{
     border-radius: 10px;
@@ -308,14 +334,52 @@ tr :hover{
     margin-top: 20px;
     font-size: x-large;
     border: none;
-    border-bottom: solid 2px rgba(0, 165, 0, 0.233);
+    border-bottom: solid 2px var(--color-underline);
     border-radius: 2px;
+    background-color: var(--theme-three);
 }
 .input input:focus, .input input:hover, textarea:focus, textarea:hover{
 
     outline: none;
-    background-color: #e9e9e9;
+    background-color: var(--theme-one);
 }
 .icon{
     width: 50px;
+}
+.login-page{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.login-page-input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 100ms ease;
+}
+.login-page-title{
+    margin: 5px;
+    font-weight: bold;
+    color: var(--color-one);
+}
+.login-page-input:focus, .login-page-input:hover{
+    outline: none;
+    border-left: solid 4px var(--color-five);
+    border-radius: 0px ;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button1{
+    background-color: var(--color-one);
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.solid{
+    background-color: var(--color-one);
+    width: 100%;
+    height: f;
 }

@@ -25,7 +25,7 @@ const PinjamBuku = (props) =>{
             <div className="align-left">
                 {props.expired}
                 <button className="close-button">
-                    <i className="fa fa-close"/>
+                    <i className="fa fa-close text-danger"/>    
                 </button>
             </div>
         </div>
