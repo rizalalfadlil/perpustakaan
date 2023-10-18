@@ -14,6 +14,7 @@ import { ScrollUp } from "./scrollup";
 import Navbar from "./Navbar";
 import { Sidebar } from "./Sidebar";
 import { SettingsPage } from "./settings";
+import { Row, Col } from "react-bootstrap";
 export const Mainpage = () => {
     return (
         <>
@@ -36,10 +37,12 @@ function Frame(props){
         <div className='content'>
         <ScrollUp/>
         <Navbar className="nb"/>    
+          <div className="box-container">
           <Sidebar/>
           <div className="main">
             {props.children}
         </div>
+          </div>
         </div>
 </>
     )
@@ -50,12 +53,12 @@ const Dashboard = () =>{
     <div className="box welcome">
         <h1>welcome</h1>
     </div>
-    <div className="box-container">
+    <Row>
         <SmallBox jumlah="4" judul="judul"/>
         <SmallBox jumlah="1" judul="judul"/>
         <SmallBox jumlah="2" judul="judul"/>
-        <SmallBox jumlah="3" judul="judul" class="last"/>
-    </div>
+        <SmallBox jumlah="3" judul="judul"/>
+    </Row>
     <ActivityLog/>
     </>
  )

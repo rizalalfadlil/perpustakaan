@@ -7,7 +7,7 @@ export const Navigation = () =>{
     return(
         <div className='box box-dark navigation'>
             <b className='box-title-dark'><i className='fa fa-bars m-2'/>Navigasi<hr/></b>
-            <div className='flex-wrap'>
+            <div className='flex-wrap nav-menu'>
             <a href='/'><i className="fa fa-home m-2 xl"/><br/>Dashboard</a>
             <a href='/siswa'><i className="fa fa-user m-2"/><br/>Data Siswa</a>
             <a href='/buku'><i className="fa fa-book m-2"/><br/>Data Buku</a>

@@ -43,7 +43,7 @@
     margin: 20px;
     width: 20%;
     height: 100%;
-    position: fixed;
+    display: block;
     z-index: 2;
 }
 html{
@@ -124,31 +124,28 @@ html{
 .navigation{
     height: 500px;
 }
-.navigation .flex-wrap a{
+.navigation .nav-menu a{
     text-align: center;
     background-color: var(--theme-four);
-    width: 30%;
-    padding: 20px 0px;
+    width: 110px;
+    padding:20px 0px;
     margin: 5px;
     color: var(--theme-two);
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
 }
-.navigation .flex-wrap a:hover{
+.navigation .nav-menu a:hover{
     background-color: var(--theme-nine);
 }
-.navigation .flex-wrap a i{
+.navigation .nav-menu a i{
     scale: 2;
 }
 /*main page */
 .main{
     margin: 20px;
-    margin-left: 22.5%;
-    width: 76%;
+    width: 75%;
     height: auto;
-    position: absolute;
-    z-index: 2;
 }
 .welcome{
     height: 500px;
@@ -157,7 +154,6 @@ html{
     align-items: center; 
 }
 .box-small{
-    width: 25%;
     height: 200px;
     margin-right: 20px;
     display: flex;
@@ -321,27 +317,26 @@ tr :hover{
 .input input{
     width: 100%;
     margin-top: 20px;
-    font-size: xx-large;
     border: none;
-    border-bottom: solid 2px var(--color-underline);
-    border-radius: 2px;
-    background-color: var(--theme-three);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 100ms ease;
 }
 .input textarea{
-    border-radius: 10px;
     width: 100%;
-    height: auto;
-    margin-top: 20px;
-    font-size: x-large;
     border: none;
-    border-bottom: solid 2px var(--color-underline);
-    border-radius: 2px;
-    background-color: var(--theme-three);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 100ms ease;
+    margin-top: 20px;
 }
 .input input:focus, .input input:hover, textarea:focus, textarea:hover{
-
     outline: none;
-    background-color: var(--theme-one);
+    border-left: solid 4px var(--color-five);
+    border-radius: 0px ;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .icon{
     width: 50px;
