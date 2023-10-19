@@ -15,31 +15,52 @@ import Navbar from "./Navbar";
 import { Sidebar } from "./Sidebar";
 import { SettingsPage } from "./settings";
 import { Row, Col } from "react-bootstrap";
-export const Mainpage = () => {
-    return (
-        <>
-          {isLoginPage() ? (
-            <RoutePage />
-          ) : (
-            <Frame>
-              <RoutePage />
-            </Frame>
-          )}
-        </>
+function is404Page() {
+    const validRoutes = [
+      '/',
+      '/buku',
+      '/siswa',
+      '/admin',
+      '/buku/:id',
+      '/siswa/:id',
+      '/buku/:id/edit',
+      '/siswa/:id/edit',
+      '/settings',
+      '/login',
+    ];
+  
+    const currentPath = window.location.pathname;
+    const is404 = !validRoutes.some(route => {
+      // Gunakan metode .match() untuk mencocokkan rute yang valid dengan rute saat ini
+      return new RegExp(`^${route.replace(/:[a-zA-Z]+/g, '[a-zA-Z0-9-]+')}$`).test(currentPath);
+    });
+  
+    return is404;
+  }
+  
+  export const Mainpage = () => {
+    const isLoginPage = window.location.pathname === '/login';
+    const is404 = is404Page();
+  
+    if (isLoginPage || is404) {
+      return <RoutePage />;
+    } else {
+      return (
+        <Frame>
+          <RoutePage />
+        </Frame>
       );
-}
-function isLoginPage() {
-    return window.location.pathname === '/login';
-}
+    }
+  }
+  
 function Frame(props){
     return(
 <>
         <div className='content'>
-        <ScrollUp/>
         <Navbar className="nb"/>    
           <div className="box-container">
           <Sidebar/>
-          <div className="main">
+          <div className="main mt-5">
             {props.children}
         </div>
           </div>
@@ -66,40 +87,46 @@ const Dashboard = () =>{
 const DataBuku = () =>{
     return(
        <>
-       <div className="box-container">
-        <div className="half">
+       <Row>
+        <Col xl={4}>
             <BookInfo/>
             <Menu/>
-        </div>
+        </Col>
+        <Col>
         <BookList/>
-       </div>
+        </Col>
+       </Row>
        </>
     )
 }
 const DataSiswa = () =>{
     return(
        <>
-       <div className="box-container">
-        <div className="half">
+       <Row>
+        <Col  xl={4}>
             <InfoSiswa/>
             <DaftarPinjam/>
             <Menu/>
-        </div>
+        </Col>
+        <Col>
         <ListSiswa/>
-       </div>
+        </Col>
+       </Row>
        </>
     )
 }
 const DataAdmin = () =>{
     return(
        <>
-       <div className="box-container">
-        <div className="half">
+       <Row>
+        <Col  xl={4}>
             <InfoAdmin/>
             <Menu/>
-        </div>
+        </Col>
+        <Col>
         <ListAdmin/>
-       </div>
+        </Col>
+       </Row>
        </>
     )
 }
